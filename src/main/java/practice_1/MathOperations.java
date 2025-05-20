@@ -1,5 +1,13 @@
+package practice_1;
+
 public class MathOperations {
     public static void main(String[] args) {
+
+        Student student = new Student(20, "Elena");
+        student.setName("Alina");
+        student.setAge(21);
+        System.out.println(student.getName() + " " + student.getAge());
+        System.out.println("-------------------------------------------------");
 
         int sum = add(3, 4);
         System.out.println("Результат суммы: " + sum);
@@ -33,7 +41,7 @@ public class MathOperations {
         System.out.println("Результат вычисления процентов: " + percent);
         double foren = celsiusToFahrenheit(34);
         System.out.println("Результат в форенгейтах: " + foren);
-        double cel = squareArea(14);
+        double cel = fahrenheitToCelsius(14);
         System.out.println("Результат в цельсиях: " + cel);
     }
 
