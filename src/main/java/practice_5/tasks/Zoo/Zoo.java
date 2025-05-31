@@ -20,11 +20,4 @@ public class Zoo {
         System.out.println("Животное " + animal + " было удалено");
         this.animal = null;
     }
-
-    @Override
-    public String toString() {
-        return "Zoo{" +
-                "animal=" + this.animal.toString() +
-                '}';
-    }
 }

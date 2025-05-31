@@ -12,4 +12,9 @@ public class Elephant extends Animal {
     public void makeSound() {
         System.out.println("Буууууууууу");
     }
+
+    @Override
+    public String toString() {
+        return "Слон";
+    }
 }

@@ -12,4 +12,9 @@ public class Bird extends Animal {
     public void makeSound() {
         System.out.println("Чик-чирик");
     }
+
+    @Override
+    public String toString() {
+        return "Птица";
+    }
 }

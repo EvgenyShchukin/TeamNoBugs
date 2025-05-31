@@ -1,6 +1,6 @@
 package practice_5.tasks.Zoo;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         Zoo zoo = new Zoo();
 
