@@ -30,12 +30,14 @@ public class MathOperations {
         System.out.println("Минут составляет: " + convertSecondsToMinutes(134));
         System.out.println("---------------------------------------");
         System.out.println("Средняя скорость составляет: " + averageSpeed(200, 40));
+        System.out.println("Не удалось рассчитать среднюю скорость: " + averageSpeed(200, 0));
         System.out.println("---------------------------------------");
         System.out.println("Гипотенуза составляет: " + findHypotenuse(5, 6));
         System.out.println("---------------------------------------");
         System.out.println("Длина окружности составляет: " + circleCircumference(6));
         System.out.println("---------------------------------------");
         System.out.println("Скидка составляет: " + calculatePercentage(200, 25));
+        System.out.println("Не удалось рассчитать скидку: " + calculatePercentage(0, 25));
         System.out.println("---------------------------------------");
         System.out.println("Температура в фаренгейтах составляет: " + celsiusToFahrenheit(16));
         System.out.println("---------------------------------------");
@@ -96,8 +98,8 @@ public class MathOperations {
     //Создайте метод convertSecondsToMinutes(int seconds), который возвращает количество минут (целых или дробных).
     //Вызовите метод в main и выведите результат.
 
-    public static int convertSecondsToMinutes(int seconds) {
-        return seconds / 60;
+    public static double convertSecondsToMinutes(int seconds) {
+        return seconds / 60.0;
     }
 
     //6. Метод для вычисления средней скорости
@@ -106,6 +108,10 @@ public class MathOperations {
     //Вызовите метод с разными значениями.
 
     public static double averageSpeed(double distance, double time) {
+        if (time == 0) {
+            System.out.println("Указано неверное значение времени");
+            return 0;
+        }
         return distance / time;
     }
 
@@ -134,6 +140,10 @@ public class MathOperations {
     //Пример: 25 из 200 → 12.5%
 
     public static double calculatePercentage(double total, double part) {
+        if (total == 0) {
+            System.out.println("Указана неверная сумма");
+            return 0;
+        }
         return (part / total) * 100;
     }
 
@@ -145,7 +155,7 @@ public class MathOperations {
     //Проверьте оба метода в main.
 
     public static double celsiusToFahrenheit(double c) {
-        return c * 9 / +32;
+        return c * 9 / 5 + 32;
     }
 
     public static double fahrenheitToCelsius(double f) {
