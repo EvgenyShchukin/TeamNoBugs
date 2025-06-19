@@ -12,6 +12,8 @@ public class DebugTask7 {
         Thread t2 = new Thread(() -> withdraw(50));
         t1.start();
         t2.start();
+        t1.join();
+        t2.join();
     }
 
     public static synchronized void withdraw(int amount) {
