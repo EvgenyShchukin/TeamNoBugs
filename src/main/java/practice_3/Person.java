@@ -31,7 +31,20 @@ public class Person {
         this.lastName = lastName;
     }
 
-    void printPersonInfo() {
-        System.out.println("Имя: " + this.firstName + ", Фамилия: " + this.lastName + ", SSN: " + this.ssn);
+    public void printPersonInfo() {
+        System.out.println("Имя: " + getFirstName() + ", Фамилия: " + getLastName() + ", SSN: " + getSsn());
+    }
+
+    public static void main(String[] args) {
+        Person person1  = new Person("Иван", "Иванов" , "123-45-6789");
+        Person person2  = new Person("Петр", "Петров" , "555-66-6789");
+        Person person3  = new Person("Семен", "Семенов" , "777-88-6789");
+
+        person3.setFirstName("Semen");
+        person3.setLastName("Semenov");
+
+        person1.printPersonInfo();
+        person2.printPersonInfo();
+        person3.printPersonInfo();
     }
 }
