@@ -1,11 +1,16 @@
 package practice_2;
 
 public class Product {
-    String name = "Milk";
-    double price;
+    private String name;
+    private double price;
 
-    public Product(double price) {
+    public Product(String name, double price) {
+        this.name = name;
         this.price = price;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public double getPrice() {
@@ -17,11 +22,11 @@ public class Product {
     }
 
     public double applyDiscount(int discount) {
-        double discountAmount = price * ((double) discount / 100);
+        double discountAmount = getPrice() * ((double) discount / 100);
         return price -= discountAmount;
     }
 
     public void printInfo() {
-        System.out.println("Товар: " + this.name + ", Цена: " + this.price);
+        System.out.println("Товар: " + getName() + ", Цена: " + getPrice());
     }
 }

@@ -1,8 +1,8 @@
 package practice_2;
 
 public class StudentGroup {
-    String groupName;
-    int studentCount;
+    private String groupName;
+    private int studentCount;
 
     public StudentGroup(String groupName, int studentCount) {
         this.groupName = groupName;
@@ -25,7 +25,8 @@ public class StudentGroup {
         this.studentCount = studentCount;
     }
 
-    public void printInfo() {
-        System.out.println("Группа: " + this.groupName + ", Количество студентов: " + this.studentCount);
+
+    public void  printInfo() {
+        System.out.println("Группа: " + getGroupName() + ", Количество студентов: " + getStudentCount());
     }
 }

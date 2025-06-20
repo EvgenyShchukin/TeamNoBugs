@@ -1,8 +1,8 @@
 package practice_2;
 
 public class Car {
-    String brand;
-    int year;
+    private String brand;
+    private int year;
 
     public Car(String brand, int year) {
         this.brand = brand;
@@ -26,6 +26,6 @@ public class Car {
     }
 
     public void print() {
-        System.out.println("Марка автомобиля: " + this.brand + ", " + "Год выпуска: " + this.year);
+        System.out.println("Марка авто: " + this.brand + ", Год выпуска: " + this.year);
     }
 }

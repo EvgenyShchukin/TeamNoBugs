@@ -1,8 +1,8 @@
 package practice_2;
 
 public class Book {
-    String title;
-    String author;
+    private String title;
+    private String author;
 
     public Book(String title, String author) {
         this.title = title;
@@ -17,15 +17,15 @@ public class Book {
         return author;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
     public void setAuthor(String author) {
         this.author = author;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public void printInfo() {
-        System.out.println("Название книги: " + title +", " + "Автор книги: " + author);
+        System.out.println("Название книги: " + this.title + ", Автор книги: " + this.author);
     }
 }

@@ -1,8 +1,8 @@
 package practice_2;
 
 public class Rectangle {
-    int width;
-    int height;
+    private int width;
+    private int height;
 
     public Rectangle(int width, int height) {
         this.width = width;
@@ -20,7 +20,6 @@ public class Rectangle {
     public void setWidth(int width) {
         this.width = width;
     }
-
 
     public int calculateArea() {
         return width * height;

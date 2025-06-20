@@ -1,8 +1,8 @@
 package practice_2;
 
 public class Laptop {
-    String brand;
-    double price;
+    private String brand;
+    private double price;
 
     public Laptop(String brand, double price) {
         this.brand = brand;
@@ -26,6 +26,6 @@ public class Laptop {
     }
 
     public void printInfo() {
-        System.out.println("Бренд: " + this.brand + ", Цена: " + this.price + " руб");
+        System.out.println("Бренд: " + getBrand() + ", Цена: " + getPrice());
     }
 }

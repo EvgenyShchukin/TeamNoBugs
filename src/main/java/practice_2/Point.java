@@ -1,8 +1,8 @@
 package practice_2;
 
 public class Point {
-    int x;
-    int y = 6;
+    private int x;
+    private int y = 5;
 
     public Point(int x) {
         this.x = x;
@@ -17,6 +17,6 @@ public class Point {
     }
 
     public void print() {
-        System.out.println("x равен: " + this.x + ", y равен: " + this.y);
+        System.out.println("Координаты: x = " + getX() + ", y = " + this.y);
     }
 }

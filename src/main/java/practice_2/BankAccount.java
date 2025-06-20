@@ -1,19 +1,20 @@
 package practice_2;
 
 public class BankAccount {
-    String owner;
-    double balance;
+    private String owner;
+    private double balance;
 
-    public BankAccount(double balance) {
+    public BankAccount(String owner, double balance) {
+        this.owner = owner;
         this.balance = balance;
     }
 
-    public double getBalance() {
-        return balance;
+    public String getOwner() {
+        return owner;
     }
 
-    public void setBalance(double balance) {
-        this.balance = balance;
+    public void setOwner(String owner) {
+        this.owner = owner;
     }
 
     public void deposit(double amount) {
@@ -25,6 +26,6 @@ public class BankAccount {
     }
 
     public void printBalance() {
-        System.out.println("Баланс: " + balance);
+        System.out.println("Текущий баланс равен: " + this.balance);
     }
 }

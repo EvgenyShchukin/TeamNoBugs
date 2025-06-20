@@ -1,12 +1,12 @@
 package practice_2;
 
 public class Teacher {
-    String name;
-    String subject;
+    private String name;
+    private String subject;
 
-    public Teacher(String subject, String name) {
-        this.subject = subject;
+    public Teacher(String name, String subject) {
         this.name = name;
+        this.subject = subject;
     }
 
     public String getName() {
@@ -26,6 +26,6 @@ public class Teacher {
     }
 
     public void printInfo() {
-        System.out.println("Учитель: " + this.name + ", Предмет: " + this.subject);
+        System.out.println("Имя учителя: " + getName() + ", Предмет: " + getSubject());
     }
 }

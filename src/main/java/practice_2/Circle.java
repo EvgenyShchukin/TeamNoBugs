@@ -1,7 +1,7 @@
 package practice_2;
 
 public class Circle {
-    double radius;
+    private double radius;
 
     public Circle(int radius) {
         this.radius = radius;
@@ -16,10 +16,10 @@ public class Circle {
     }
 
     public double calculateArea() {
-        return Math.PI * radius * radius;
+        return Math.PI * getRadius() * getRadius();
     }
 
     public double calculateCircumference() {
-        return 2 * Math.PI * radius;
+        return 2 * Math.PI * getRadius();
     }
 }
