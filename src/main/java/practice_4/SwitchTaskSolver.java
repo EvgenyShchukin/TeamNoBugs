@@ -59,11 +59,11 @@ public class SwitchTaskSolver {
         } else if (number >= 80 && number <= 89) {
             System.out.println("B");
         } else if (number >= 70 && number <= 79) {
-            System.out.println("B");
+            System.out.println("C");
         } else if (number >= 60 && number <= 69) {
-            System.out.println("B");
+            System.out.println("D");
         } else if (number >= 0 && number <= 59) {
-            System.out.println("B");
+            System.out.println("F");
         } else {
             System.out.println("Введено некорректное число");
         }
@@ -85,8 +85,10 @@ public class SwitchTaskSolver {
     public static void calcNumber() {
         System.out.println("Введите первое число");
         int a = scanner.nextInt();
+        scanner.nextLine();
         System.out.println("Введите второе число");
         int b = scanner.nextInt();
+        scanner.nextLine();
         System.out.println("Введите оператор");
         String operator = scanner.nextLine();
 

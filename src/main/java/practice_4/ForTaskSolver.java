@@ -45,7 +45,7 @@ public class ForTaskSolver {
         if (number <= 0) {
             System.out.println("Введите число от 1");
         } else {
-            for (int i = 0; i < number; i++) {
+            for (int i = 0; i <= number; i++) {
                 sum = sum + i;
             }
         }

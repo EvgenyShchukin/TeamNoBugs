@@ -55,7 +55,7 @@ public class DoWhileTaskSolder {
         int i = 1;
 
         do {
-            System.out.println("ЧислоЖ " + i);
+            System.out.println("Число: " + i);
             i++;
         } while (i < 11);
     }
