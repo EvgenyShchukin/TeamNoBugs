@@ -1,13 +1,19 @@
-package practice_5.tasks.Museum;
+package practice_5.tasks.museum;
 
 public class Sculpture extends Exhibit {
+
     @Override
-    public void humidityControl() {
-        System.out.println("Скульптура требует контроля влажности");
+    public void describe() {
+        System.out.println("Стоящая скульптура");
     }
 
     @Override
-    public void restoration() {
-        System.out.println("Скульптура требует реставрации");
+    public void preserve() {
+        System.out.println("Нуждается в реставрации");
+    }
+
+    @Override
+    public String toString() {
+        return "Скульптура";
     }
 }

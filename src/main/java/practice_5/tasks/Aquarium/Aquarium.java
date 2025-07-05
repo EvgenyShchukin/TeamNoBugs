@@ -1,14 +1,19 @@
-package practice_5.tasks.Aquarium;
+package practice_5.tasks.aquarium;
 
 public class Aquarium {
-    SeeAnimal seeAnimal;
+    private SeaCreature seaCreature;
 
-    public void addSeeAnimal (SeeAnimal seeAnimal) {
-        this.seeAnimal = seeAnimal;
-        System.out.println("Лог: Морское животное добавлено");
+    public void addSeaCreature(SeaCreature seaCreature) {
+        this.seaCreature = seaCreature;
+        System.out.println("Добавлено новое существо: " + seaCreature);
     }
 
-    public void showFloats() {
-        seeAnimal.floats();
+    public void forceMove() {
+        this.seaCreature.move();
+    }
+
+    public void removeSeaCreature() {
+        System.out.println("Существо " + seaCreature + " удалено");
+        this.seaCreature = null;
     }
 }

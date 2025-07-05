@@ -1,16 +1,15 @@
-package practice_5.tasks.Zoo;
+package practice_5.tasks.zooPark;
 
 public class Elephant extends Animal {
 
-
     @Override
     public void move() {
-        System.out.println("Ходит");
+        System.out.println("ходит");
     }
 
     @Override
     public void makeSound() {
-        System.out.println("Буууууууууу");
+        System.out.println("Буууууууууууууууу");
     }
 
     @Override

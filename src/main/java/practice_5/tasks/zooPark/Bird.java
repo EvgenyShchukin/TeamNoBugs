@@ -1,11 +1,10 @@
-package practice_5.tasks.Zoo;
+package practice_5.tasks.zooPark;
 
 public class Bird extends Animal {
 
-
     @Override
     public void move() {
-        System.out.println("Летает");
+        System.out.println("летает");
     }
 
     @Override

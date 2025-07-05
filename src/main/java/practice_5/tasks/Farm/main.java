@@ -1,17 +1,23 @@
-package practice_5.tasks.Farm;
+package practice_5.tasks.farm;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         FarmManager farmManager = new FarmManager();
 
-        farmManager.addFarmAnimal(new Cow());
-        farmManager.forceGives();
-        farmManager.forceRequires();
+        Chicken chicken = new Chicken();
+        farmManager.addFarmAnimal(chicken);
+        farmManager.forceFeed();
+        farmManager.forceCare();
+        farmManager.forceProduce();
+        farmManager.removeFarmAnimal();
 
-        System.out.println("---------------------------------");
+        System.out.println("-------------------");
 
-        farmManager.addFarmAnimal(new Chicken());
-        farmManager.forceGives();
-        farmManager.forceRequires();
+        Cow cow = new Cow();
+        farmManager.addFarmAnimal(cow);
+        farmManager.forceFeed();
+        farmManager.forceCare();
+        farmManager.forceProduce();
+        farmManager.removeFarmAnimal();
     }
 }

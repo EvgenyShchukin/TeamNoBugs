@@ -1,4 +1,4 @@
-package practice_5.tasks.Restaurant;
+package practice_5.tasks.restaurant;
 
 public class Drink extends Dish {
     private int volume;
@@ -12,7 +12,12 @@ public class Drink extends Dish {
     }
 
     @Override
-    public void showCaracteristics() {
+    public void showDishOptions() {
         System.out.println("Объем напитка: " + this.volume);
+    }
+
+    @Override
+    public String toString() {
+        return "Напиток";
     }
 }

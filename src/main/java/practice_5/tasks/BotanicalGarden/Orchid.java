@@ -1,13 +1,13 @@
-package practice_5.tasks.BotanicalGarden;
+package practice_5.tasks.botanicalGarden;
 
-public class Orchid extends Plant {
+public class Orchid implements Plant{
     @Override
-    public void humidity() {
-        System.out.println("Орхидея требует частого полива");
+    public void care() {
+        System.out.println("Требует высокую влажность и тень");
     }
 
     @Override
-    public void light() {
-        System.out.println("Орхидея не любит свет");
+    public String toString() {
+        return "Орхидея";
     }
 }

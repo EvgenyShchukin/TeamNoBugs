@@ -1,11 +1,11 @@
-package practice_5.tasks.Zoo;
+package practice_5.tasks.zooPark;
 
 public class Zoo {
     private Animal animal;
 
     public void addAnimal(Animal animal) {
+        System.out.println("Добавлено животное " + animal + " в зоопарк");
         this.animal = animal;
-        System.out.println("Животное " + animal + " было добавлено в зоопарк");
     }
 
     public void forceMove() {
@@ -16,8 +16,8 @@ public class Zoo {
         this.animal.makeSound();
     }
 
-    public void removeAnimal() {
-        System.out.println("Животное " + animal + " было удалено");
+    public void removeAnimal(Animal animal) {
+        System.out.println("Животное " + animal + " удалено из зоопарка");
         this.animal = null;
     }
 }

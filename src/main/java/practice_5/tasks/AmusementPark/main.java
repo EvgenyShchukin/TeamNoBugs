@@ -1,15 +1,21 @@
-package practice_5.tasks.AmusementPark;
+package practice_5.tasks.amusementPark;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
-        AttractionManager attractionManager = new AttractionManager();
+        Park park = new Park();
 
-        attractionManager.addAttraction(new Carousel());
-        attractionManager.forceCheckSecurity();
+        Carousel carousel = new Carousel();
+        park.addAttraction(carousel);
+        park.printInfo();
+        park.printMaintain();
+        park.removeAttraction();
 
-        System.out.println("----------------------------------------------------");
+        System.out.println("------------------------------");
 
-        attractionManager.addAttraction(new Switchback());
-        attractionManager.forceService();
+        RollerCoaster rollerCoaster = new RollerCoaster();
+        park.addAttraction(rollerCoaster);
+        park.printInfo();
+        park.printMaintain();
+        park.removeAttraction();
     }
 }

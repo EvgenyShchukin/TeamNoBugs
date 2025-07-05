@@ -1,14 +1,19 @@
-package practice_5.tasks.Restaurant;
+package practice_5.tasks.restaurant;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
-        Menu dish = new Menu();
+        Menu menu = new Menu();
 
-        dish.addMenu(new Drink(100));
-        dish.showCaracteristics();
+        Drink drink = new Drink(100);
+        menu.addDish(drink);
+        menu.showDishOptions();
+        menu.removeDish();
 
-        System.out.println("--------------------------------------------------");
-        dish.addMenu(new HotDish(150));
-        dish.showCaracteristics();
+        System.out.println("----------------------------");
+
+        HotDish hotDish = new HotDish(120);
+        menu.addDish(hotDish);
+        menu.showDishOptions();
+        menu.removeDish();
     }
 }

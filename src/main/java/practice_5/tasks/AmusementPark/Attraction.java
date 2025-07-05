@@ -1,8 +1,7 @@
-package practice_5.tasks.AmusementPark;
+package practice_5.tasks.amusementPark;
 
-public interface Attraction {
-    public void service();
+public abstract class Attraction {
+    public abstract void info();
 
-    public void checkSecurity();
-
+    public abstract void maintain();
 }

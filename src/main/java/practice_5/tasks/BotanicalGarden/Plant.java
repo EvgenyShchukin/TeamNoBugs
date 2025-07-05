@@ -1,8 +1,5 @@
-package practice_5.tasks.BotanicalGarden;
+package practice_5.tasks.botanicalGarden;
 
-public abstract class Plant {
-
-    public abstract void humidity();
-
-    public abstract void light();
+public interface Plant {
+    public void care();
 }

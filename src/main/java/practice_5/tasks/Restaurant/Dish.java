@@ -1,5 +1,5 @@
-package practice_5.tasks.Restaurant;
+package practice_5.tasks.restaurant;
 
 public abstract class Dish {
-    public abstract void showCaracteristics();
+    public abstract void showDishOptions();
 }

@@ -1,13 +1,19 @@
-package practice_5.tasks.Museum;
+package practice_5.tasks.museum;
 
 public class Manuscript extends Exhibit {
+
     @Override
-    public void humidityControl() {
-        System.out.println("Манускрипт требует контроля влажности");
+    public void describe() {
+        System.out.println("Древний текст");
     }
 
     @Override
-    public void restoration() {
-        System.out.println("Манускрипт требует реставрации");
+    public void preserve() {
+        System.out.println("Требует контролируемой влажности");
+    }
+
+    @Override
+    public String toString() {
+        return "Манускрипт";
     }
 }

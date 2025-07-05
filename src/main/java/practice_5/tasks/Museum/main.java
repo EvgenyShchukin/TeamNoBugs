@@ -1,16 +1,21 @@
-package practice_5.tasks.Museum;
+package practice_5.tasks.museum;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         Museum museum = new Museum();
 
-        museum.addExhibit(new Manuscript());
-        museum.forceHumidityControl();
-        museum.forceRestoration();
+        Sculpture sculpture = new Sculpture();
+        museum.addExhibit(sculpture);
+        museum.printDescribe();
+        museum.printPreserve();
+        museum.removeExhibit();
 
-        System.out.println("============================");
-        museum.addExhibit(new Sculpture());
-        museum.forceRestoration();
-        museum.forceHumidityControl();
+        System.out.println("--------------------");
+
+        Manuscript manuscript = new Manuscript();
+        museum.addExhibit(manuscript);
+        museum.printDescribe();
+        museum.printPreserve();
+        museum.removeExhibit();
     }
 }

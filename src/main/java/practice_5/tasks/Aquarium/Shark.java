@@ -1,9 +1,13 @@
-package practice_5.tasks.Aquarium;
+package practice_5.tasks.aquarium;
 
-public class Shark  extends SeeAnimal{
+public class Shark extends SeaCreature {
+    @Override
+    public void move() {
+        System.out.println("Плавает быстро и агрессивно");
+    }
 
     @Override
-    public void floats() {
-        System.out.println("Акула плавает быстро и агрессивно");
+    public String toString() {
+        return "Акула";
     }
 }

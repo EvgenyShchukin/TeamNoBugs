@@ -1,13 +1,23 @@
-package practice_5.tasks.Farm;
+package practice_5.tasks.farm;
 
-public class Cow  extends FarmAnimal {
+public class Cow extends FarmAnimal {
     @Override
-    public void give() {
-        System.out.println("Корова дает молоко");
+    public void feed() {
+        System.out.println("Ест траву");
     }
 
     @Override
-    public void requires() {
-        System.out.println("Корова требует выпаса");
+    public void care() {
+        System.out.println("Нуждается в выпосе");
+    }
+
+    @Override
+    public void produce() {
+        System.out.println("Дает молоко");
+    }
+
+    @Override
+    public String toString() {
+        return "Корова";
     }
 }

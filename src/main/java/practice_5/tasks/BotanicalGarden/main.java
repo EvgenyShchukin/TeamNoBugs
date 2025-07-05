@@ -1,17 +1,19 @@
-package practice_5.tasks.BotanicalGarden;
+package practice_5.tasks.botanicalGarden;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
-        PlantManager plantManager = new PlantManager();
+        Garden garden = new Garden();
 
-        plantManager.addPlant(new Cactus());
-        plantManager.giveHumidity();
-        plantManager.giveLight();
+        Cactus cactus = new Cactus();
+        garden.addPlant(cactus);
+        garden.printCare();
+        garden.removePlant();
 
-        System.out.println("-------------------------------------");
+        System.out.println("----------------------------");
 
-        plantManager.addPlant(new Orchid());
-        plantManager.giveHumidity();
-        plantManager.giveLight();
+        Orchid orchid = new Orchid();
+        garden.addPlant(orchid);
+        garden.printCare();
+        garden.removePlant();
     }
 }

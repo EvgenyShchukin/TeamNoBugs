@@ -1,13 +1,13 @@
-package practice_5.tasks.BotanicalGarden;
+package practice_5.tasks.botanicalGarden;
 
-public class Cactus extends Plant{
+public class Cactus implements Plant {
     @Override
-    public void humidity() {
-        System.out.println("Кактус требует много света");
+    public void care() {
+        System.out.println("Требует много света и редкий полив");
     }
 
     @Override
-    public void light() {
-        System.out.println("Кактус не любит воду");
+    public String toString() {
+        return "Кактус";
     }
 }

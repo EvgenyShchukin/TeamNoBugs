@@ -1,4 +1,4 @@
-package practice_5.tasks.Restaurant;
+package practice_5.tasks.restaurant;
 
 public class HotDish extends Dish {
     private int temperature;
@@ -12,7 +12,12 @@ public class HotDish extends Dish {
     }
 
     @Override
-    public void showCaracteristics() {
+    public void showDishOptions() {
         System.out.println("Температура блюда: " + this.temperature);
+    }
+
+    @Override
+    public String toString() {
+        return "Горячее блюдо";
     }
 }

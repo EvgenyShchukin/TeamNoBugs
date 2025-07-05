@@ -1,9 +1,9 @@
-package practice_5.tasks.Farm;
+package practice_5.tasks.farm;
 
 public abstract class FarmAnimal {
+    public abstract void feed();
 
-    public abstract void give();
+    public abstract void care();
 
-    public abstract void requires();
+    public abstract void produce();
 }
-

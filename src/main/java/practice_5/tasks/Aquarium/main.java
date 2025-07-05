@@ -1,15 +1,19 @@
-package practice_5.tasks.Aquarium;
+package practice_5.tasks.aquarium;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         Aquarium aquarium = new Aquarium();
 
-        aquarium.addSeeAnimal(new Shark());
-        aquarium.showFloats();
+        Shark shark = new Shark();
+        aquarium.addSeaCreature(shark);
+        aquarium.forceMove();
+        aquarium.removeSeaCreature();
 
-        System.out.println("---------------------------------------------");
+        System.out.println("-----------------------------");
 
-        aquarium.addSeeAnimal(new FiveFinger());
-        aquarium.showFloats();
+        Starfish starfish = new Starfish();
+        aquarium.addSeaCreature(starfish);
+        aquarium.forceMove();
+        aquarium.removeSeaCreature();
     }
 }
